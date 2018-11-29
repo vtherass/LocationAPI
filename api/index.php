@@ -19,7 +19,6 @@ while (false !== ($entry = $d->read())) {
 }
 $d->close();*/
 
-
 $dataReq = [];
 if(file_get_contents("php://input") != "") {
     $jsonData = file_get_contents("php://input");

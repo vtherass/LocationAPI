@@ -4,14 +4,17 @@ include('location.class.php');
 
 switch($url) {
     case '/'.$root:
-        getAll();
+        getAllLocations();
+        break;
+    case '/'.$root.'/activities':
+        getActivitiesFromLocations();
         break;
     default:
         echo "Error Etudiant : no match root !";
         break;
 }
 
-function getAll() {
+function getAllLocations() {
     include('modeles/dbconnect.class.php');
     
     try {
