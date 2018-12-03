@@ -1,5 +1,5 @@
 <?php
-    require_once("config.php");
+    require_once("core.php");
     class DBConnect {
 
         private static $scientiaDB;

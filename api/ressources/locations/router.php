@@ -1,6 +1,6 @@
 <?php 
 
-include('location.class.php');
+include('modeles/location.class.php');
 
 switch($url) {
     case '/'.$root:
@@ -15,7 +15,7 @@ switch($url) {
 }
 
 function getAllLocations() {
-    include('modeles/dbconnect.class.php');
+    include('config/dbconnect.class.php');
     
     try {
         $data = DBConnect::scientiaDB()->query("
