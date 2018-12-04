@@ -22,7 +22,7 @@ $d->close();*/
 $dataReq = [];
 if(file_get_contents("php://input") != "") {
     $jsonData = file_get_contents("php://input");
-    $dataReq = json_decode($jsonData, true);
+    $dataPost = json_decode($jsonData, true);
 }
 
 if (!file_exists('./ressources/'.$root.'/router.php')) { 
