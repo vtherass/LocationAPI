@@ -25,6 +25,7 @@ if(file_get_contents("php://input") != "") {
     $dataPost = json_decode($jsonData, true);
 }
 
+
 if (!file_exists('./ressources/'.$root.'/router.php')) { 
     echo 'Ressource not found !'; 
 } 
