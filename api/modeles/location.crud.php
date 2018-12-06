@@ -11,7 +11,7 @@ function getLocations($searchBy = NULL, $dataPost = NULL) {
             $reqString = "AND V_DEPARTMENT.Hostkey IN ($departments) ";
             break;
         case "byZone":
-            $zones = "'" . implode("','", $dataPost) . "'";
+            $zones = "'" . implode("','", $dataPost["data"]) . "'";
             $reqString = "AND V_ZONE.Hostkey IN ($zones) ";
             break;
         default:
