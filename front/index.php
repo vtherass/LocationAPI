@@ -3,7 +3,7 @@
     <head>
         <meta http-equiv="content-type" content="text/html; charset=utf-8">
         <title>
-            Gestion Etudiant
+            Gestion Locations
         </title>
         <link rel="stylesheet" href="style/css/style.css">
     </head>

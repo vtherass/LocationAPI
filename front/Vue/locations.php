@@ -1,6 +1,6 @@
 <div class="container">
     <h1>
-        ICI LA LISTE DES ENSEIGNANTS
+        ICI LA LISTE DES LOCAUX
     </h1>
     <table>
         <tr>
@@ -11,16 +11,7 @@
             <th>Delete</th>
         </tr>
         <?php
-            foreach($locations as $location) {
-                ?>
-                <tr>
-                    <td><?php echo $location->id; ?></td>
-                    <td><?php echo $location->nom; ?></td>
-                    <td><?php echo $location->prenom; ?></td>
-                    <td><?php echo $location->email; ?></td>
-                </tr>
-                <?php
-            }
+            var_dump($locations);
         ?>
     </table>
 </div>

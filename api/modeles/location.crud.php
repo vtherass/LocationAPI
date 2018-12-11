@@ -39,7 +39,7 @@ WHERE V_LOCATION.Id IS NOT NULL " . $reqString . "ORDER BY locationName";
         $locations[] = new Location($req);
         }
         
-        $message = ["success" => true, "datetime" => date("l, d/m/Y"), "data" => $locations];
+        $message = ["success" => true, "datetime" => date("l, d/m/Y, H:i"), "data" => $locations];
         
         echo json_encode($message);
     

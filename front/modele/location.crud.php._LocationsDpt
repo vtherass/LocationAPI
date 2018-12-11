@@ -6,11 +6,11 @@ require_once('config.php');
 
 /* Listing Locations */
 function getAllLocations(){
-    $path = Api::getPath()."/locations/zones";
+    $path = Api::getPath()."/locations/departments";
     //Envoie une requte de type GET
 
     $postdata = ["send_datetime" => date("l, d/m/Y, H:i"),
-                "data" => ["Plaine", "Solbosch"]
+                "data" => ["F", "H"]
                 ];
     $opts = array('http' =>
         array(
